@@ -10,6 +10,8 @@ $(function(){
             $('.navbar-collapse').toggleClass("push");
             
         }
+
+        
         else{
             $('.navbar-collapse').removeClass("push");
             $('body').removeClass('push-body');
