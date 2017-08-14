@@ -1,0 +1,129 @@
+/*fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+/*header */
+body{
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+header {
+    background: green;
+    min-height: 50px;
+        
+    position: relative;
+}
+nav.navbar-navigation {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+        position: relative;
+}
+.menu-button {
+    display: none;
+}
+
+.navbar-header a {
+    display: block;
+    height: 50px;
+}
+.navbar-header a img {
+    height: 50px;
+}
+ul.navbar-list {
+    display: flex;
+    min-height: 50px;
+}
+ul.navbar-list li.active a {
+    background: #000;
+}
+ul.navbar-list li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+ul.navbar-list li a:hover {
+    background: #000;
+}
+
+/*banner */
+section.banner {
+    background: blue;
+    height: 100vh;
+}
+
+@media (max-width:768px){
+    header {
+    padding: 10px 0px;
+}
+    .navbar-collapse {
+    display: none;
+}
+.menu-button {
+    padding: 10px 10px;
+     display: block;
+    background: #fff;
+}
+.menu-button a i {
+    color: #000;
+}
+.menu-button:hover a i {
+    color: #fff;
+}
+.menu-button:hover {
+    background: #000;
+}
+.menu-button:hover > i {
+    color: #fff;
+}
+ul.navbar-list li a {
+    padding: 26px 20px;
+    font-size: 18px;
+}
+ul.navbar-list {
+    display: block;
+    min-height: auto;
+}
+.navbar-collapse.push {
+    right: 0%;
+}
+.navbar-collapse {
+    display: block !important;
+    position: fixed;
+    top: 0%;
+    width: 50%;
+    right: -100%;
+    background: green;
+    height: 100%;
+    z-index: 100;
+    margin-top: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.container-fluid {
+    padding: 0px;
+}
+nav.navbar-navigation {
+    padding: 0px 15px;
+}
+body {
+    background: green;
+}
+body.push-body {
+    margin-right: 50%;
+}
+body.push-body:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    background: rgba(0, 0, 0, 0.51);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+}
